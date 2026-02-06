@@ -1,12 +1,12 @@
-using System.Diagnostics.CodeAnalysis;
+int[,] matrix = { {1,2,3}, {4,5,6}, {7,8,9} };
+int sum = 0;
 
-int [,] matrix ={{1,2,3},{4,5,6},{7,8,9}};
-int sum=0;
-for(i=0;i<2;i++)
+for (int i = 0; i < 3; i++)
 {
-    for(j=0;j<5;j++)
+    for (int j = 0; j < 3; j++)
     {
-        sum+= matrix[i,j];
+        sum += matrix[i, j];
     }
-    Console.WriteLine("La suma de los elementos es :" + sum);
 }
+
+Console.WriteLine("La suma de los elementos es: " + sum);
