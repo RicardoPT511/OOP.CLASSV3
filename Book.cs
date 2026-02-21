@@ -10,7 +10,7 @@ public class Book
     public Book()
     {
         title = "Libro";
-        author = "Gibran";
+        author = "Ricardo";
         pages = 111;
         open = false;
     }
