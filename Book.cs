@@ -43,16 +43,12 @@ class Examples
 {
     static void Main(string[] args)
     {
-        
         Book book = new Book();
 
-        
         book.ShowInfo();
-
-        
+ 
         book.Open();
 
-        
         book.Close();
     }
 }
