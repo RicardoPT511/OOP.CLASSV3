@@ -47,7 +47,7 @@ class Examples
 
         Employee[] employees = new Employee[numEmp];
 
-        Console.WriteLine("\n--- Ingrese los datos de cada empleado ---");
+        Console.WriteLine("\nIngrese los datos de cada empleado ");
         for (int i = 0; i < numEmp; i++)
         {
             Console.WriteLine($"\nEmpleado #{i + 1}");
@@ -62,7 +62,7 @@ class Examples
 
         float average = sum / numEmp;
 
-        Console.WriteLine("\n--- Empleados ingresados ---");
+        Console.WriteLine("\n Empleados ingresados ");
         for (int i = 0; i < numEmp; i++)
         {
             employees[i].Print();

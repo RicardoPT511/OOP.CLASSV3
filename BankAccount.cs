@@ -1,4 +1,4 @@
-using System.Security.Cryptography.X509Certificates;
+using System;
 
 public class BankAccount
 {
@@ -7,13 +7,46 @@ public class BankAccount
 
     public BankAccount()
     {
-        holder="Usuario1";
-        balance=1000;
+        holder = "Usuario1";
+        balance = 1000;
     }
 
     public void ShowBalance()
     {
-        Console.WriteLine("Su balance es de :"+balance);
+        Console.WriteLine("El saldo es de " + balance);
     }
-     
+
+    public void Deposit(int amount)
+    {
+        balance += amount;
+        Console.WriteLine("Se depositaron " + amount);
+    }
+
+    public void Withdraw(int amount)
+    {
+        if (amount > balance)
+        {
+            Console.WriteLine("No es posible retirar " + amount + 
+            " ya que es mayor a los " + balance + " que se tienen");
+        }
+        else
+        {
+            balance -= amount;
+            Console.WriteLine("Se retiraron " + amount);
+        }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        BankAccount account = new BankAccount();
+
+        account.ShowBalance();      // Mostrar saldo inicial
+        account.Deposit(500);       // Depositar 500
+        account.Withdraw(2000);     // Intentar retirar 2000
+        account.Withdraw(500);      // Retirar 500
+        account.ShowBalance();      // Mostrar saldo final
+    }
 }
