@@ -43,10 +43,10 @@ class Program
     {
         BankAccount account = new BankAccount();
 
-        account.ShowBalance();      // Mostrar saldo inicial
-        account.Deposit(500);       // Depositar 500
-        account.Withdraw(2000);     // Intentar retirar 2000
-        account.Withdraw(500);      // Retirar 500
-        account.ShowBalance();      // Mostrar saldo final
+        account.ShowBalance();     
+        account.Deposit(500);       
+        account.Withdraw(2000);     
+        account.Withdraw(500);      
+        account.ShowBalance();      
     }
 }
