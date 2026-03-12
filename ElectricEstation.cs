@@ -37,7 +37,7 @@ class ElectricStation
         }
         else
         {
-            Console.WriteLine("Error: Contraseña incorrecta.");
+            Console.WriteLine("Error: Contraseña incorrecta");
         }
     }
 
