@@ -61,17 +61,17 @@ class Program
 
         Console.WriteLine();
 
-        Console.WriteLine("Piden pizza con true en extra queso:");
+        Console.WriteLine("Piden pizza con extra queso:");
         pizza.OrderPizza(true);
 
         Console.WriteLine();
 
-        Console.WriteLine("Piden pizza con false en extra queso:");
+        Console.WriteLine("Piden pizza con extra queso:");
         pizza.OrderPizza(false);
 
         Console.WriteLine();
 
-        Console.WriteLine("Piden una pizza con ingredientes que sí existen:");
+        Console.WriteLine("Piden una pizza con :");
         string[] pizzaValida = { "Pepperoni", "Cheese" };
         pizza.OrderPizza(pizzaValida);
 
