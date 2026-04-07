@@ -4,13 +4,11 @@ class PizzeriaLoca
 {
     private string[] ingredients = { "Pepperoni", "Mushroom", "Ham", "Cheese", "Olives" };
 
-    // Versión 1: pizza sencilla
+    
     public void OrderPizza()
     {
         Console.WriteLine("A plain pizza has been delivered!");
     }
-
-    // Versión 2: pizza con extra queso
     public void OrderPizza(bool extraCheese)
     {
         if (extraCheese)
@@ -23,7 +21,7 @@ class PizzeriaLoca
         }
     }
 
-    // Versión 3: pizza con ingredientes
+
     public void OrderPizza(string[] requestedIngredients)
     {
         for (int i = 0; i < requestedIngredients.Length; i++)
