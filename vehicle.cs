@@ -26,7 +26,57 @@ public class vehicle
         {
             Random rnd = new Random();
             int randNum = rnd.Next(0, 2);
+            if(randNum==1)
+            {
+                Console.WriteLine("Usted a chicado");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Usted casi choca");
+                return false;
+            }
         }
+        Console.WriteLine("Va muy lento para chocar");
+        return false;
     }
 
 }
+
+public class Car:vehicle
+{
+    private int doorsNum;
+
+    public Car(int doors)
+    {
+        doorsNum=doors;
+    }
+
+    public void OpenTrunk()
+    {
+        if(doorsNum%2!=0)
+        {
+            Console.WriteLine("The truck is open");
+        }
+        else
+        {
+            Console.WriteLine("No tiene cajuela");
+        }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Car car1 =new Car(3);
+
+        car1.Accelerate();
+        car1.Accelerate();
+        car1.Accelerate();
+        car1.Crash();
+        car1.OpenTrunk();
+    }
+
+}
+
