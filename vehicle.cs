@@ -28,7 +28,7 @@ public class vehicle
             int randNum = rnd.Next(0, 2);
             if(randNum==1)
             {
-                Console.WriteLine("Usted a chicado");
+                Console.WriteLine("Usted a chocado");
                 return true;
             }
             else
